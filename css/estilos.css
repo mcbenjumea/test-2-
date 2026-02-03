@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f1ea; /* Color crema suave */
+    color: #333;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                      url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;height: 60vh;display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
