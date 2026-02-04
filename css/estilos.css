@@ -15,3 +15,66 @@ body {
     color: white;
     text-align: center;
 }
+
+.sedes {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contenedor-sedes {
+    display: flex;
+    justify-content: space-around;flex-wrap: wrap;gap: 20px;
+}
+
+.sede {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 250px;
+    border-top: 5px solid #5499c7;
+}
+
+.contacto {
+    background-color: #212f3d;color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario input, .formulario textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-enviar {
+    background-color: #7b241c;color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #a93226;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+}
+

@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-    <link rel="stylesheet" href="estilos.css">
 <head>
     <meta charset="UTF-8">
-    <title>PAMPA Restaurante</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAMPA Restaurante - Parrilla Argentina</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Pampa Restaurante - Tradición Argentina">
+    
 </head>
+
 <body>
-    <h1>PAMPA restaurante</h1>
-    <img src="Restaurant.jpg" alt="Restaurant" width="300" height="200px" style="border-radius: 20px;">
 
-    <p><strong>Acerca de nosotros:</strong> str lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</strong></p>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Pampa Restaurante</h1>
+            <p>El verdadero sabor de la tradición Argentina en tu mesa.</p>
+        </div>
+    </header>
 
-    <div><p><strong>Encuentranos en:</strong></p></div>
-    <div><li>Caballito</li></div>
-    <div><li>Palermo</li></div>
-    <div><li>Recoleta</li></div>
+    <section class="sedes">
+        <h2>Nuestras Sedes</h2>
+        <div class="contenedor-sedes">
+            <div class="sede">
+                <h3>Palermo</h3>
+                <p>Av. Santa Fe 1234</p>
+            </div>
+            <div class="sede">
+                <h3>Almagro</h3>
+                <p>Calle Rivadavia 4567</p>
+            </div>
+            <div class="sede">
+                <h3>Caballito</h3>
+                <p>Av. Acoyte 890</p>
+            </div>
+        </div>
+    </section>
 
-<form>
-    <button type="submit" class="btn-enviar">Contactanos</button> 
-   
+    <section class="contacto">
+        <h2>¿Quieres reservar o más información?</h2>
+        <form action="#" class="formulario">
+            <input type="text" placeholder="Tu Nombre" required>
+            <input type="email" placeholder="Tu Correo" required>
+            <textarea placeholder="¿En qué podemos ayudarte?"></textarea>
+            
+            <button type="submit" class="btn-enviar">Enviar Consulta</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>📞 Reservas: +54 11 1234-5678</p>
+        <p>© 2026 Pampa Restaurante - Todos los derechos reservados.</p>
+        <p>Palermo | Almagro | Caballito</p>
+    </footer>
+
 </body>
 </html>
