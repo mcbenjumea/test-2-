@@ -18,81 +18,42 @@ body {
     text-align: center;
 }
 
-.hero h1, .hero p {
-    animation: aparecer 1.2s ease-out;
-}
-
-.navegacion {
-    background-color: #212f3d;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.navegacion ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-.navegacion li {
-    position: relative;
-}
-
-.navegacion li a {
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
-    font-weight: bold;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    padding: 0;
-}
-
-.dropdown-content li a {
-    color: #333;
-    padding: 12px 16px;
-    border-bottom: 1px solid #eee;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content li a:hover {
-    background-color: #f1f1f1;
-}
-
-.sedes {
-    padding: 50px 20px;
+.menu-categorias, .sedes {
+    padding: 60px 20px;
     text-align: center;
 }
 
-.contenedor-sedes { 
-    display: flex !important; 
-    justify-content: center; 
-    flex-wrap: wrap; 
-    gap: 30px; 
-    width: 100%; 
+.contenedor-menu, .contenedor-sedes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
     max-width: 1200px;
-    margin: 0 auto; 
-    padding: 50px 0;
+    margin: 0 auto;
 }
 
-.enlace-sede { 
-    display: block !important; 
-    text-decoration: none !important; 
-    color: inherit; 
-    width: 280px; 
+.categoria, .enlace-sede {
+    width: 280px;
+}
+
+.categoria {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.categoria:hover {
+    transform: scale(1.05);
+    background-color: #7b241c;
+    color: white;
+}
+
+.enlace-sede {
+    text-decoration: none;
+    color: inherit;
     cursor: pointer;
     position: relative;
     z-index: 10;
@@ -104,14 +65,13 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-top: 5px solid #5499c7;
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    box-sizing: border-box;
+    transition: all 0.4s ease;
     pointer-events: none;
 }
 
 .enlace-sede:hover .sede {
     transform: translateY(-10px);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25);
 }
 
 .contacto {
@@ -129,26 +89,13 @@ body {
     gap: 15px;
 }
 
-.formulario input, .formulario textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-}
-
 .btn-enviar {
     background-color: #7b241c;
     color: white;
     padding: 15px;
     border: none;
     border-radius: 8px;
-    font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn-enviar:hover {
-    background-color: #a93226;
-    transform: scale(1.05);
 }
 
 footer {
