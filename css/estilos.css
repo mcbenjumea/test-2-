@@ -22,6 +22,56 @@ body {
     animation: aparecer 1.2s ease-out;
 }
 
+.navegacion {
+    background-color: #212f3d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navegacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navegacion li {
+    position: relative;
+}
+
+.navegacion li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    padding: 0;
+}
+
+.dropdown-content li a {
+    color: #333;
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f1f1f1;
+}
+
 .sedes {
     padding: 50px 20px;
     text-align: center;
@@ -29,7 +79,6 @@ body {
 
 .contenedor-sedes { 
     display: flex !important; 
-    flex-direction: row; 
     justify-content: center; 
     flex-wrap: wrap; 
     gap: 30px; 
@@ -45,6 +94,8 @@ body {
     color: inherit; 
     width: 280px; 
     cursor: pointer;
+    position: relative;
+    z-index: 10;
 }
 
 .sede {
@@ -55,7 +106,7 @@ body {
     border-top: 5px solid #5499c7;
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-sizing: border-box;
-    height: 100%;
+    pointer-events: none;
 }
 
 .enlace-sede:hover .sede {
@@ -105,16 +156,9 @@ footer {
     color: #aaa;
     text-align: center;
     padding: 30px;
-    font-size: 0.9rem;
 }
 
 @keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
