@@ -1,0 +1,87 @@
+:root {
+  --dorado-pampa: #c5a059;
+  --negro-carbon: #1a1a1a;
+  --blanco-hueso: #f4f4f4;
+  --rojo-vino: #630e0e;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: var(--blanco-hueso);
+  color: var(--negro-carbon);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--negro-carbon);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid var(--dorado-pampa);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--dorado-pampa);
+}
+
+.sedes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.sede-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.sede-card h3 {
+  background-color: var(--rojo-vino);
+  color: white;
+  margin: 0;
+  padding: 15px;
+}
+
+.menu-section {
+  background-color: var(--negro-carbon);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.item-corte {
+  border-bottom: 1px dashed var(--dorado-pampa);
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.btn-reserva {
+  background-color: var(--dorado-pampa);
+  color: var(--negro-carbon);
+  border: none;
+  padding: 12px 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-reserva:hover {
+  transform: scale(1.05);
+  background-color: #d4b375;
+}
