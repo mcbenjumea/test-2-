@@ -11,380 +11,32 @@
     <header class="hero">
         <div class="hero-content">
             <h1>Pampa Restaurante</h1>
-            <p>El verdadero sabor de la tradición Argentina en tu mesa.</p>
+            <p>El verdadero sabor de la tradicion Argentina en tu mesa.</p>
+            <section class="video-destacado" aria-labelledby="video-destacado-titulo">
+                <div class="video-destacado__texto">
+                    <p class="video-destacado__eyebrow">Tradicion argentina</p>
+                    <h2 id="video-destacado-titulo">Asado, sobremesa y encuentros que se sienten cercanos</h2>
+                    <p>Una escena que resume el espiritu de PAMPA: fuego, comida compartida y personas reunidas alrededor de la mesa.</p>
+                </div>
+                <div class="video-destacado__marco">
+                    <iframe
+                        src="https://www.youtube.com/embed/1Ir3qa3m35Q?rel=0"
+                        title="Video sobre asado tradicional argentino"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
         </div>
     </header>
 
     <section class="menu-categorias">
         <h2>Nuestra Carta</h2>
-        <div class="contenedor-menu">
-            <button class="categoria categoria-boton" id="categoria-principales" type="button" aria-expanded="false" aria-controls="panel-principales">
-                <span class="icono">🥩</span>
-                <h3>Principales</h3>
-                <p>Haz click para ver los principales destacados de la casa.</p>
-            </button>
-            <button class="categoria categoria-boton" id="categoria-postres" type="button" aria-expanded="false" aria-controls="panel-postres">
-                <span class="icono">🍰</span>
-                <h3>Postres</h3>
-                <p>Haz click para descubrir 10 postres tradicionales argentinos.</p>
-            </button>
-            <button class="categoria categoria-boton" id="categoria-bebidas" type="button" aria-expanded="false" aria-controls="panel-bebidas">
-                <span class="icono">🍷</span>
-                <h3>Bebidas</h3>
-                <p>Haz click para ver opciones sin alcohol, con alcohol y refrescos.</p>
-            </button>
+        <div class="menu-layout">
+            <nav class="contenedor-menu js-menu-buttons" aria-label="Categorias principales de la carta"></nav>
+            <div class="menu-paneles js-menu-panels"></div>
         </div>
-
-        <section class="panel-categoria" id="panel-principales" hidden>
-            <div class="panel-categoria__encabezado">
-                <p class="panel-postres__eyebrow">Selección destacada</p>
-                <h3>Platos principales recomendados</h3>
-                <p>Incluye cortes premium, pastas artesanales y pescados frescos con una valoración visible según su popularidad.</p>
-            </div>
-
-            <div class="platos-grid">
-                <article class="plato-card">
-                    <img src="assets/menu/principales-bife.jpg" alt="Bife de chorizo braseado" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Bife de chorizo braseado</h4>
-                        <p>Corte premium de 420 g con papas crocantes, manteca de hierbas, chimichurri ahumado y tomates asados.</p>
-                        <div class="estrellas" aria-label="5 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/principales-ojo-bife.jpg" alt="Ojo de bife reserva" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Ojo de bife reserva</h4>
-                        <p>Corte premium de 450 g servido con puré rústico de papa, cebollas glaseadas y reducción de malbec.</p>
-                        <div class="estrellas" aria-label="5 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/principales-tbone.jpg" alt="T-bone de la pampa" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>T-bone de la pampa</h4>
-                        <p>Corte premium de 580 g acompañado de vegetales a la leña, criolla fresca y emulsión de ajo confitado.</p>
-                        <div class="estrellas" aria-label="4 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/principales-lomo.jpg" alt="Lomo premium al malbec" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Lomo premium al malbec</h4>
-                        <p>Corte premium de 380 g con salsa de malbec, hongos salteados, zanahorias baby y cremoso de cabutia.</p>
-                        <div class="estrellas" aria-label="4 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/principales-tomahawk.jpg" alt="Tomahawk ahumado" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Tomahawk ahumado</h4>
-                        <p>Corte premium de 900 g para compartir, con papines andinos, manteca de romero y salsa criolla picante.</p>
-                        <div class="estrellas" aria-label="5 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/principales-sorrentinos.jpg" alt="Sorrentinos de jamón y mozzarella" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Sorrentinos de jamón y mozzarella</h4>
-                        <p>Pasta rellena con salsa pomodoro especiada, albahaca fresca, aceite de oliva y escamas de parmesano.</p>
-                        <div class="estrellas" aria-label="4 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/principales-fetuccini.jpg" alt="Fetuccini al verdeo" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Fetuccini al verdeo</h4>
-                        <p>Pasta fresca con crema de verdeo, pollo grillado, champiñones dorados y pimienta negra recién molida.</p>
-                        <div class="estrellas" aria-label="5 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/principales-noquis.jpg" alt="Ñoquis soufflé de papa" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Ñoquis soufflé de papa</h4>
-                        <p>Ñoquis caseros con salsa de cuatro quesos, nuez tostada, panceta crocante y cebolla de verdeo.</p>
-                        <div class="estrellas" aria-label="4 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/principales-salmon.jpg" alt="Salmón austral grillado" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Salmón austral grillado</h4>
-                        <p>Lomo de salmón con arroz cremoso de limón, espárragos, manteca cítrica y brotes frescos.</p>
-                        <div class="estrellas" aria-label="5 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/principales-pesca.jpg" alt="Pesca blanca al horno" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Pesca blanca al horno</h4>
-                        <p>Filet de pesca del día con calabaza asada, beurre blanc, hinojo crocante y emulsión de eneldo.</p>
-                        <div class="estrellas" aria-label="4 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/principales-trucha.jpg" alt="Trucha patagónica crocante" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Trucha patagónica crocante</h4>
-                        <p>Trucha sellada con manteca avellanada, puré de arvejas, almendras tostadas y vegetales baby.</p>
-                        <div class="estrellas" aria-label="5 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span></div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="panel-categoria" id="panel-postres" hidden>
-            <div class="panel-categoria__encabezado">
-                <p class="panel-postres__eyebrow">Tradición dulce</p>
-                <h3>Postres tradicionales argentinos</h3>
-                <p>Cada propuesta incluye su imagen y una valoración de cinco estrellas rellenas según su popularidad en la carta.</p>
-            </div>
-
-            <div class="platos-grid">
-                <article class="plato-card">
-                    <img src="assets/menu/postres-flan.jpg" alt="Flan casero con dulce de leche" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Flan casero con dulce de leche</h4>
-                        <div class="estrellas" aria-label="5 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/postres-panqueques.jpg" alt="Panqueques con dulce de leche" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Panqueques con dulce de leche</h4>
-                        <div class="estrellas" aria-label="5 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/postres-alfajores.jpg" alt="Alfajores de maicena" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Alfajores de maicena</h4>
-                        <div class="estrellas" aria-label="5 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/postres-chocotorta.jpg" alt="Chocotorta" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Chocotorta</h4>
-                        <div class="estrellas" aria-label="5 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/postres-rogel.jpg" alt="Torta Rogel" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Torta Rogel</h4>
-                        <div class="estrellas" aria-label="4 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/postres-arroz.jpg" alt="Arroz con leche" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Arroz con leche</h4>
-                        <div class="estrellas" aria-label="4 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/postres-pastelitos.jpg" alt="Pastelitos criollos" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Pastelitos criollos</h4>
-                        <div class="estrellas" aria-label="4 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/postres-queso-dulce.jpg" alt="Queso y dulce" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Queso y dulce</h4>
-                        <div class="estrellas" aria-label="4 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/postres-mazamorra.jpg" alt="Mazamorra" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Mazamorra</h4>
-                        <div class="estrellas" aria-label="3 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella">★</span><span class="estrella">★</span></div>
-                    </div>
-                </article>
-
-                <article class="plato-card">
-                    <img src="assets/menu/postres-vigilante.jpg" alt="Postre vigilante" loading="lazy">
-                    <div class="plato-card__contenido">
-                        <h4>Postre vigilante</h4>
-                        <div class="estrellas" aria-label="3 de 5 estrellas por popularidad"><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella activa">★</span><span class="estrella">★</span><span class="estrella">★</span></div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="panel-categoria" id="panel-bebidas" hidden>
-            <div class="panel-categoria__encabezado">
-                <p class="panel-postres__eyebrow">Barra de la casa</p>
-                <h3>Bebidas para cada momento</h3>
-                <p>La carta de bebidas se organiza en tres clasificaciones para que encuentres rápido opciones sin alcohol, con alcohol y refrescos o sodas.</p>
-            </div>
-
-            <section class="bloque-bebidas">
-                <h4 class="bloque-bebidas__titulo">Sin alcohol</h4>
-                <div class="platos-grid">
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-limonada.jpg" alt="Limonada con menta y jengibre" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Limonada con menta y jengibre</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-naranja.jpg" alt="Jugo de naranja exprimido" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Jugo de naranja exprimido</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-frutilla.jpg" alt="Licuado de frutilla" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Licuado de frutilla</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-banana.jpg" alt="Licuado de banana" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Licuado de banana</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-te.jpg" alt="Té helado de durazno" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Té helado de durazno</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-agua.jpg" alt="Agua mineral con gas" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Agua mineral con gas</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-cafe.jpg" alt="Café frío artesanal" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Café frío artesanal</h4>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section class="bloque-bebidas">
-                <h4 class="bloque-bebidas__titulo">Con alcohol</h4>
-                <div class="platos-grid">
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-malbec.jpg" alt="Malbec reserva" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Malbec reserva</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-chardonnay.jpg" alt="Chardonnay patagónico" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Chardonnay patagónico</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-cerveza.jpg" alt="Cerveza rubia tirada" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Cerveza rubia tirada</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-negroni.jpg" alt="Negroni clásico" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Negroni clásico</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-mojito.jpg" alt="Mojito de la casa" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Mojito de la casa</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-fernet.jpg" alt="Fernet con cola" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Fernet con cola</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-whisky.jpg" alt="Whisky on the rocks" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Whisky on the rocks</h4>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section class="bloque-bebidas">
-                <h4 class="bloque-bebidas__titulo">Refrescos o sodas</h4>
-                <div class="platos-grid">
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-cola.jpg" alt="Cola clásica" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Cola clásica</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-lima.jpg" alt="Lima limón" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Lima limón</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-naranja-soda.jpg" alt="Naranja burbujeante" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Naranja burbujeante</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-tonica.jpg" alt="Agua tónica" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Agua tónica</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-ginger.jpg" alt="Ginger ale" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Ginger ale</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-pomelo.jpg" alt="Pomelo rosado" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Pomelo rosado</h4>
-                        </div>
-                    </article>
-                    <article class="plato-card">
-                        <img src="assets/menu/bebidas-soda.jpg" alt="Soda sifón" loading="lazy">
-                        <div class="plato-card__contenido">
-                            <h4>Soda sifón</h4>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </section>
     </section>
 
     <section class="sedes">
@@ -415,17 +67,12 @@
     </section>
 
     <section class="contacto">
-        <h2>¿Quieres reservar?</h2>
-        <form class="formulario">
-            <input type="text" placeholder="Tu Nombre" required>
-            <input type="email" placeholder="Tu Correo" required>
-            <textarea placeholder="¿En qué podemos ayudarte?"></textarea>
-            <button type="submit" class="btn-enviar">Enviar Consulta</button>
-        </form>
+        <h2>Quieres reservar?</h2>
+        <p>Completa el formulario de reservas para coordinar mesa, consultas sobre cortes o informacion de sedes.</p>
     </section>
 
     <footer>
-        <p>© 2026 Pampa Restaurante - Tradición Argentina</p>
+        <p>&copy; 2026 Pampa Restaurante - Tradicion Argentina</p>
     </footer>
 
     <footer id="contacto">
@@ -434,17 +81,17 @@
             <label for="nombre">Nombre Completo:</label>
             <input type="text" id="nombre" name="nombre">
 
-            <label for="email">Correo Electrónico:</label>
+            <label for="email">Correo Electronico:</label>
             <input type="email" id="email" name="email">
 
             <label for="mensaje">Consulta o Pedido (Cortes, Sedes):</label>
             <textarea id="mensaje" name="mensaje"></textarea>
 
             <button type="submit" id="btn-enviar">Enviar a Pampa</button>
-            <p id="error-msg" style="display: none;"></p>
+            <p id="error-msg" hidden></p>
         </form>
     </footer>
 
-    <script type="module" src="./js/validador.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
