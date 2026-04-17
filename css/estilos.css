@@ -1,9 +1,9 @@
 :root {
     --font-display: "Bodoni 72", "Didot", "Book Antiqua", Georgia, serif;
     --font-base: "Poppins", Helvetica, Arial, sans-serif;
-    --font-principales: Helvetica, Arial, sans-serif;
-    --font-postres: Helvetica, Arial, sans-serif;
-    --font-bebidas: Helvetica, Arial, sans-serif;
+    --font-principales: "Poppins", Helvetica, Arial, sans-serif;
+    --font-postres: "Poppins", Helvetica, Arial, sans-serif;
+    --font-bebidas: "Poppins", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -180,7 +180,7 @@ strong {
 .categoria-boton .icono {
     display: block;
     margin-bottom: 12px;
-    font-family: var(--font-display);
+    font-family: var(--font-base);
     font-size: 1.55rem;
     font-weight: 700;
     letter-spacing: 0.03em;
@@ -190,6 +190,21 @@ strong {
     text-shadow:
         0 1px 0 rgba(255, 255, 255, 0.6),
         0 4px 12px rgba(61, 36, 14, 0.3);
+}
+
+.categoria--principales .icono {
+    font-family: var(--font-principales);
+    font-weight: 700;
+}
+
+.categoria--postres .icono {
+    font-family: var(--font-postres);
+    font-weight: 700;
+}
+
+.categoria--bebidas .icono {
+    font-family: var(--font-bebidas);
+    font-weight: 700;
 }
 
 .categoria:hover .icono,
